@@ -1,9 +1,13 @@
 import React from 'react'
-
+import Card from './components/Card'
+import CreatedBy from './components/CreatedBy'
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <Card />
+      <CreatedBy />
+    </div>
   )
 }
 
