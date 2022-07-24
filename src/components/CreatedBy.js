@@ -2,7 +2,7 @@ import React from 'react'
 
 function CreatedBy() {
   return (
-    <div>CreatedBy</div>
+    <div className='created'>created by <a href="https://github.com/hasanaimroatun/wpu-windbnbChallenge.git" className='nama'>hasanaimroatun</a> - devChallenges.io</div>
   )
 }
 
