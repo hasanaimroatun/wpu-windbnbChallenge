@@ -10,11 +10,11 @@ function Tombol() {
             <img src={imgBnb} alt="logo" className='bnb'/>
         </span>
         <span className='containerTombol'>
-            <input type="text" className='kotak1'/>
-            <input type="text" className='kotak2'/>
-            <button className=''>
-                <MdSearch size='1.5em' color='#eb5757'/>
-            </button>
+          <button className='kotak1'>Add location</button>
+          <button className='kotak2'>Add guests</button>
+          <button  type='submit' className='kotak3'>
+              <MdSearch size='1.5em' color='#eb5757'/>
+          </button>
         </span>
     </div>
   )
