@@ -4,6 +4,12 @@
     url('./font/montserrat-regular-webfont.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'mulish';
+    src: local('mulish'),
+    url('./font/muli-webfont.woff2') format('woff2');
+}
+
 .bnb {
     margin: 49px 54px 85px;
 }
@@ -16,26 +22,40 @@
 
 .kotak1 {
     border: none;
-    margin: auto;
-    height: 55px;
+    height: 50px;
+    width: 130px;
+    background-color: white;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
+    box-shadow: 0px 0px 2px grey;
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #bdbdbd;
 }
 
 .kotak2 {
     border: none;
-    margin: auto;
-    height: 55px;
+    height: 50px;
+    width: 120px;
+    background-color: white;
+    box-shadow: 0px 0px 2px grey;
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #bdbdbd;
+}
+
+.kotak3 {
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: white;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
-}
-
-.kotak1:hover {
-    border: 0.5px solid #828282;
-}
-
-.kotak2:hover {
-    border: 0.5px solid #828282;
+    box-shadow: 0px 0px 2px grey;
+    position: relative;
+    top: 3px;
 }
 
 .judulUtm {
@@ -130,5 +150,21 @@
     color: #333;
     height: 20px;
     padding-top: 15px;
+}
+
+.created {
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 17.07px;
+    text-align: center;
+    color: #828282;
+    margin-top: 178px;
+    margin-bottom: 35px;
+}
+
+.nama {
+    color: inherit;
+    font-weight: 700;
 }
 
