@@ -21,7 +21,7 @@ function Tombol({tambahLokasi, tambahTamu}) {
         </span>
         <span className='containerTombol'>
           <button onClick={toggleIsOpen} className='kotak1'>{tambahLokasi}</button>
-          <button className='kotak2'>{tambahTamu}</button>
+          <button onClick={toggleIsOpen} className='kotak2'>{tambahTamu}</button>
           <button  type='submit' className='kotak3'>
               <MdSearch size='1.5em' color='#eb5757'/>
           </button>
