@@ -168,3 +168,33 @@
     font-weight: 700;
 }
 
+.none {
+    height: 0px;
+}
+
+.lbox {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.containerTombolLBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    background-color: white;
+}
+
+.lBoxTombol {
+    height: 50px;
+    width: 100px;
+}
+
