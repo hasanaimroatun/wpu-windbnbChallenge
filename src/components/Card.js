@@ -7,14 +7,18 @@ import Tombol from './Tombol'
 
 function Card() {
     const [apartments, setApartments] = useState([])
+    const [tambahLokasi, setTambahLokasi] = useState('')
+    const [tambahTamu, setTambahTamu] = useState('')
 
     useEffect(() => {
       setApartments(Stays)
+      setTambahLokasi('Add location')
+      setTambahTamu('Add guests')
     }, [])
     
   return (
     <div>
-        <Tombol />
+        <Tombol tambahLokasi={tambahLokasi} tambahTamu={tambahTamu}/>
         <JudulUtama />
         <div className='containerGbrUtm'>
             {apartments && apartments.map(apartment => {
