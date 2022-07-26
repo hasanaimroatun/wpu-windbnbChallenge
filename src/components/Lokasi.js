@@ -15,8 +15,12 @@ function Lokasi({setPilihLokasi}) {
     <div>
       {location && location.map((l) => {
         return (
-          <div key={l.charCodeAt(0)} onClick={() => {setPilihLokasi(`${l}, Findland`)}}>
-            <MdLocationPin size='1.5em' color='#eb5757'/>
+          <div 
+          key={l.charCodeAt(0)} 
+          onClick={() => {setPilihLokasi(<div className='tambahLokasiDanTamu2'>{l}, Findland</div>)}}
+          className='pilihanLokasi'
+          >
+            <MdLocationPin size='1.5em' color='#4f4f4f' className='pin'/>
             <span>{l}, Findland</span>
           </div>
         )
