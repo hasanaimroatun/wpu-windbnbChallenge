@@ -169,7 +169,7 @@
 }
 
 .none {
-    height: 0px;
+    display: none;
 }
 
 .lbox {
@@ -189,12 +189,165 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 50%;
+    bottom: 40%;
     background-color: white;
 }
 
 .lBoxTombol {
     height: 50px;
     width: 100px;
+}
+
+.tombolLokasi {
+    width: 426px;
+    height: 55px;
+    margin-left: 97px;
+    margin-top: 93px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 2px grey;
+    background-color: white;
+    border: none;
+    padding: 5px;
+}
+
+.tombolTamu {
+    width: 426px;
+    height: 55px;
+    margin-top: 93px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 2px grey;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    position: relative;
+}
+
+.tombolPencarian {
+    width: 126px;
+    height: 55px;
+    background-color: #eb5757;
+    border-radius: 16px;
+    position: relative;
+    left: 100px;
+    border: none;
+    position: relative;
+    top: 17px;
+    right: 97px;
+}
+
+.lokasiDanTamu {
+    font-family: 'mulish', sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    line-height: 11.3px;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.tambahLokasiDanTamu {
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 17.57px;
+    color: #bdbdbd;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.tambahLokasiDanTamu2 {
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 17.57px;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.pencarian {
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.57px;
+    color: #f2f2f2;
+    position: relative;
+    top: -6px;
+    left: 5px;
+}
+
+.gbrPencarian {
+    position: relative;
+    margin-left: -5px;
+}
+
+.pilihanLokasi {
+    display: block;
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.57px;
+    color: #4f4f4f;
+    margin-left: 115px;
+    margin-top: 17px;
+    width: 206px;
+}
+
+.pin {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.pilihanTamu {
+    float: right;
+    margin-right: 682px;
+    margin-top: -135px;
+    display: block;
+}
+
+.kategoriTamu {
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.57px;
+    width: 69px;
+    color: #333;
+}
+
+.kategoriUsiaTamu {
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.57px;
+    width: 120px;
+    color: #bdbdbd;
+    margin-bottom: 7px;
+}
+
+.tombolTambahKurang {
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.57px;
+    color: #828282;
+    border: 1px solid #828282;
+    border-radius: 3px;
+}
+
+.hasilTambahKurang {
+    font-family: 'mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.57px;
+    color: #333;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.containerTombolKategori{
+    margin-top: 30px;
 }
 
