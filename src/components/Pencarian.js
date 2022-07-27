@@ -3,6 +3,7 @@ import './myStyle.css'
 import {MdSearch} from 'react-icons/md'
 import Lokasi from './Lokasi'
 import Guests from './Guests'
+import Stays from './stays.json'
 
 const Pencarian = ({
   isOpen, 
@@ -15,10 +16,19 @@ const Pencarian = ({
   tHasilTambahKurang,
   tTombolTambah,
   handleTampilkanLokasi,
-  handleTampilkanTamu
+  handleTampilkanTamu,
+  setApartments
 }) => {
     const [pilihLokasi, setPilihLokasi] = useState(<div className='tambahLokasiDanTamu'>Add location</div>)
     const [tambahkanTamu, setTambahkanTamu] = useState(<div className='tambahLokasiDanTamu'>Add guests</div>)
+
+    let filter = pilihLokasi.props.children[0] !== 'A' ? 
+      (Stays && Stays.filter(stay => {return stay.city === pilihLokasi.props.children[0]})) 
+      : Stays
+
+    const handleClick5 = () => {
+      setApartments(filter)
+    }
 
   return (
     <div>
@@ -38,7 +48,7 @@ const Pencarian = ({
               </button>
             </span>
             <span>
-              <button  onClick={toggleIsOpen} type='submit' className='tombolPencarian'>
+              <button  onClick={() => {toggleIsOpen(); handleClick5()}} type='submit' className='tombolPencarian'>
                 <MdSearch size='1.5em' color='#f2f2f2' className='gbrPencarian'/>
                 <span className='pencarian'>Search</span>
               </button>
