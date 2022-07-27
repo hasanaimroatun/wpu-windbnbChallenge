@@ -1,30 +1,38 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './myStyle.css'
 import {MdSearch} from 'react-icons/md'
 import Lokasi from './Lokasi'
 import Guests from './Guests'
 
-const Pencarian = ({isOpen, toggleIsOpen, pembungkusLBox}) => {
+const Pencarian = ({
+  isOpen, 
+  toggleIsOpen, 
+  pembungkusLBox, 
+  tampilkanLokasi, 
+  tampilkanKategoriTamu,
+  tKategoriUsiaTamu,
+  tTombolKurang,
+  tHasilTambahKurang,
+  tTombolTambah,
+  handleTampilkanLokasi,
+  handleTampilkanTamu
+}) => {
     const [pilihLokasi, setPilihLokasi] = useState(<div className='tambahLokasiDanTamu'>Add location</div>)
-    const [tambahkanTamu, setTambahkanTamu] = useState()
+    const [tambahkanTamu, setTambahkanTamu] = useState(<div className='tambahLokasiDanTamu'>Add guests</div>)
 
-    useEffect(() => {
-      setTambahkanTamu(<div className='tambahLokasiDanTamu'>Add guests</div>)
-    }, [])
-    
   return (
     <div>
       {isOpen?
         <div className={pembungkusLBox}>
           <div className='containerTombolLBox'>
             <span>
-              <button className='tombolLokasi'>
+              <button className='tombolLokasi' onClick={handleTampilkanLokasi}>
                 <div className='lokasiDanTamu'>LOCATION</div>
                 <div>{pilihLokasi}</div>
               </button>
             </span>
             <span>
-              <button className='tombolTamu'>
+              <button className='tombolTamu' onClick={handleTampilkanTamu}>
                 <div className='lokasiDanTamu'>GUESTS</div>
                 <div>{tambahkanTamu}</div>
               </button>
@@ -37,8 +45,15 @@ const Pencarian = ({isOpen, toggleIsOpen, pembungkusLBox}) => {
             </span>
 
             <div>
-              <Lokasi setPilihLokasi={setPilihLokasi} />
-              <Guests setTambahkanTamu={setTambahkanTamu} />
+              <Lokasi setPilihLokasi={setPilihLokasi} tampilkanLokasi={tampilkanLokasi}/>
+              <Guests 
+                setTambahkanTamu={setTambahkanTamu} 
+                tampilkanKategoriTamu={tampilkanKategoriTamu}
+                tKategoriUsiaTamu={tKategoriUsiaTamu}
+                tTombolKurang={tTombolKurang}
+                tHasilTambahKurang={tHasilTambahKurang}
+                tTombolTambah={tTombolTambah}
+              />
             </div>
 
           </div>
