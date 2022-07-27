@@ -22,12 +22,16 @@ const Pencarian = ({
     const [pilihLokasi, setPilihLokasi] = useState(<div className='tambahLokasiDanTamu'>Add location</div>)
     const [tambahkanTamu, setTambahkanTamu] = useState(<div className='tambahLokasiDanTamu'>Add guests</div>)
 
-    let filter = pilihLokasi.props.children[0] !== 'A' ? 
+    let filterLoc = pilihLokasi.props.children[0] !== 'A' ? 
       (Stays && Stays.filter(stay => {return stay.city === pilihLokasi.props.children[0]})) 
       : Stays
 
+    let filterGuest = tambahkanTamu.props.children[0] !== 'A' ? 
+      (filterLoc && filterLoc.filter(f => {return f.maxGuests >= tambahkanTamu.props.children[0]})) 
+      : filterLoc
+
     const handleClick5 = () => {
-      setApartments(filter)
+      setApartments(filterGuest)
     }
 
   return (
