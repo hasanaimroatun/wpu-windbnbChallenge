@@ -12,7 +12,14 @@ const reducer = (state, action) => {
     }
 }
 
-function Guests({setTambahkanTamu}) {
+function Guests({
+    setTambahkanTamu, 
+    tampilkanKategoriTamu,
+    tKategoriUsiaTamu,
+    tTombolKurang,
+    tHasilTambahKurang,
+    tTombolTambah
+}) {
     const [countAdult, dispatch1] = useReducer(reducer, initialState)
     const [countChildren, dispatch2] = useReducer(reducer, initialState)
     const tambahkanTamuRef = useRef()
@@ -22,40 +29,40 @@ function Guests({setTambahkanTamu}) {
     }, [setTambahkanTamu, countAdult, countChildren])
     
   return (
-    <div className='pilihanTamu'>
-        <div>
-            <div className='kategoriTamu'>Adults</div>
-            <div className='kategoriUsiaTamu'>Ages 13 or above</div>
+    <div>
+        <div className='containerTombolKategori'>
+            <div className={tampilkanKategoriTamu}>Adults</div>
+            <div className={tKategoriUsiaTamu}>Ages 13 or above</div>
             <div onClick={tambahkanTamuRef.current}>
                 <button 
                 onClick={() => dispatch1('decrement')}
-                className='tombolTambahKurang'
+                className={tTombolKurang}
                 >
                     -
                 </button>
-                <span className='hasilTambahKurang'>{countAdult}</span>
+                <span className={tHasilTambahKurang}>{countAdult}</span>
                 <button 
                 onClick={() => dispatch1('increment')}
-                className='tombolTambahKurang'
+                className={tTombolTambah}
                 >
                     +
                 </button>
             </div>
         </div>
         <div className='containerTombolKategori'>
-            <div className='kategoriTamu'>Children</div>
-            <div className='kategoriUsiaTamu'>Ages 2 - 12</div>
+            <div className={tampilkanKategoriTamu}>Children</div>
+            <div className={tKategoriUsiaTamu}>Ages 2 - 12</div>
             <div onClick={tambahkanTamuRef.current}>
                 <button 
                 onClick={() => dispatch2('decrement')}
-                className='tombolTambahKurang'
+                className={tTombolKurang}
                 >
                     -
                 </button>
-                <span className='hasilTambahKurang'>{countChildren}</span>
+                <span className={tHasilTambahKurang}>{countChildren}</span>
                 <button 
                 onClick={() => dispatch2('increment')}
-                className='tombolTambahKurang'
+                className={tTombolTambah}
                 >
                     +
                 </button>
