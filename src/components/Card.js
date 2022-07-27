@@ -18,7 +18,11 @@ function Card() {
     
   return (
     <div>
-        <Tombol tambahLokasi={tambahLokasi} tambahTamu={tambahTamu}/>
+        <Tombol 
+            tambahLokasi={tambahLokasi} 
+            tambahTamu={tambahTamu}
+            setApartments={setApartments}
+        />
         <JudulUtama />
         <div className='containerGbrUtm'>
             {apartments && apartments.map(apartment => {

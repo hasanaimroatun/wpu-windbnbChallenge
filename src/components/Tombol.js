@@ -4,7 +4,7 @@ import imgBnb from './icon/logo.png'
 import './myStyle.css'
 import Pencarian from './Pencarian'
 
-function Tombol({tambahLokasi, tambahTamu}) {
+function Tombol({tambahLokasi, tambahTamu, setApartments}) {
   const [isOpen, setIsOpen] = useState(false)
   const [pembungkusLBox, setPembungkusLBox] = useState('none')
   const [tampilkanLokasi, setTampilkanLokasi] = useState('none')
@@ -51,6 +51,7 @@ function Tombol({tambahLokasi, tambahTamu}) {
           tTombolTambah={tTombolTambah}
           handleTampilkanLokasi={handleTampilkanLokasi}
           handleTampilkanTamu={handleTampilkanTamu}
+          setApartments={setApartments}
         />
         <span>
             <img src={imgBnb} alt="logo" className='bnb'/>
