@@ -3,6 +3,7 @@ import {MdSearch} from 'react-icons/md'
 import imgBnb from './icon/logo.png'
 import './myStyle.css'
 import Pencarian from './Pencarian'
+import Stays from './stays.json'
 
 function Tombol({tambahLokasi, tambahTamu, setApartments}) {
   const [isOpen, setIsOpen] = useState(false)
@@ -54,7 +55,7 @@ function Tombol({tambahLokasi, tambahTamu, setApartments}) {
           setApartments={setApartments}
         />
         <span>
-            <img src={imgBnb} alt="logo" className='bnb'/>
+            <img src={imgBnb} alt="logo" className='bnb' onClick={() => {setApartments(Stays)}}/>
         </span>
         <span className='containerTombol'>
           <button 
