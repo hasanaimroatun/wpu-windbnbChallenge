@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './myStyle.css'
-import {MdSearch} from 'react-icons/md'
+import {MdSearch, MdClear} from 'react-icons/md'
 import Lokasi from './Lokasi'
 import Guests from './Guests'
 import Stays from './stays.json'
@@ -39,6 +39,10 @@ const Pencarian = ({
       {isOpen?
         <div className={pembungkusLBox}>
           <div className='containerTombolLBox'>
+            <div>
+              <span className='editSearch'>Edit your search</span>
+              <MdClear color='#333' className='close' onClick={toggleIsOpen}/>
+            </div>
             <span>
               <button className='tombolLokasi' onClick={handleTampilkanLokasi}>
                 <div className='lokasiDanTamu'>LOCATION</div>
