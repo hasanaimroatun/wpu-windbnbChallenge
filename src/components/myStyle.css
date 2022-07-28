@@ -12,6 +12,7 @@
 
 .bnb {
     margin: 49px 54px 85px;
+    cursor: pointer;   
 }
 
 .containerTombol {
@@ -23,7 +24,7 @@
 .kotak1 {
     border: none;
     height: 50px;
-    width: 130px;
+    width: 170px;
     background-color: white;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -32,6 +33,7 @@
     font-size: 14px;
     font-weight: 400;
     color: #bdbdbd;
+    cursor: pointer;
 }
 
 .kotak2 {
@@ -44,6 +46,7 @@
     font-size: 14px;
     font-weight: 400;
     color: #bdbdbd;
+    cursor: pointer;
 }
 
 .kotak3 {
@@ -56,6 +59,7 @@
     box-shadow: 0px 0px 2px grey;
     position: relative;
     top: 3px;
+    cursor: pointer;
 }
 
 .judulUtm {
@@ -208,6 +212,7 @@
     background-color: white;
     border: none;
     padding: 5px;
+    cursor: pointer;
 }
 
 .tombolTamu {
@@ -220,6 +225,7 @@
     border: none;
     padding: 5px;
     position: relative;
+    cursor: pointer;
 }
 
 .tombolPencarian {
@@ -233,6 +239,7 @@
     position: relative;
     top: 17px;
     right: 97px;
+    cursor: pointer;
 }
 
 .lokasiDanTamu {
@@ -293,6 +300,7 @@
     margin-left: 115px;
     margin-top: 17px;
     width: 206px;
+    cursor: pointer;
 }
 
 .pin {
@@ -310,6 +318,7 @@
     width: 69px;
     color: #333;
     margin-left: 550px;
+    cursor: default;
 }
 
 .kategoriUsiaTamu {
@@ -322,6 +331,7 @@
     color: #bdbdbd;
     margin-bottom: 7px;
     margin-left: 550px;
+    cursor: default;
 }
 
 .tombolKurang {
@@ -333,6 +343,7 @@
     border: 1px solid #828282;
     border-radius: 3px;
     margin-left: 550px;
+    cursor: pointer;
 }
 
 .tombolTambah {
@@ -343,6 +354,7 @@
     color: #828282;
     border: 1px solid #828282;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .hasilTambahKurang {
@@ -353,6 +365,7 @@
     color: #333;
     margin-left: 10px;
     margin-right: 10px;
+    cursor: default;
 }
 
 .containerTombolKategori{
@@ -376,13 +389,13 @@
 @media (max-width: 600px) {
     .bnb {
         margin-top: 22px;
-        margin-left: 40px;
+        margin-left: 12px;
     }
 
     .containerTombol {
         float: none;
         position: absolute;
-        margin-left: -150px;
+        margin-left: -140px;
         margin-top: 75px;
     }
 
@@ -494,6 +507,7 @@
         color: #333;
         margin-top: 18px;
         margin-left: 10px;
+        cursor: default;
     }
 
     .close {
