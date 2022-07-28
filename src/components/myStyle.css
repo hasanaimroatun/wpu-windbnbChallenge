@@ -409,9 +409,9 @@
     }
 
     .jumlah {
-        position: relative;
-        top: 39px;
-        margin-right: 130px;
+        position: absolute;
+        top: 172px;
+        left: 300px
     }
 
     .containerGbrUtm {
