@@ -17,7 +17,9 @@ const Pencarian = ({
   tTombolTambah,
   handleTampilkanLokasi,
   handleTampilkanTamu,
-  setApartments
+  setApartments,
+  setTambahLokasi,
+  setTambahTamu
 }) => {
     const [pilihLokasi, setPilihLokasi] = useState(<div className='tambahLokasiDanTamu'>Add location</div>)
     const [tambahkanTamu, setTambahkanTamu] = useState(<div className='tambahLokasiDanTamu'>Add guests</div>)
@@ -32,6 +34,8 @@ const Pencarian = ({
 
     const handleClick5 = () => {
       setApartments(filterGuest)
+      setTambahLokasi(pilihLokasi)
+      setTambahTamu(tambahkanTamu)
     }
 
   return (

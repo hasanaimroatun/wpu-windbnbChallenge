@@ -5,7 +5,7 @@ import './myStyle.css'
 import Pencarian from './Pencarian'
 import Stays from './stays.json'
 
-function Tombol({tambahLokasi, tambahTamu, setApartments}) {
+function Tombol({tambahLokasi, setTambahLokasi, tambahTamu, setTambahTamu, setApartments}) {
   const [isOpen, setIsOpen] = useState(false)
   const [pembungkusLBox, setPembungkusLBox] = useState('none')
   const [tampilkanLokasi, setTampilkanLokasi] = useState('none')
@@ -53,9 +53,17 @@ function Tombol({tambahLokasi, tambahTamu, setApartments}) {
           handleTampilkanLokasi={handleTampilkanLokasi}
           handleTampilkanTamu={handleTampilkanTamu}
           setApartments={setApartments}
+          setTambahLokasi={setTambahLokasi}
+          setTambahTamu={setTambahTamu}
         />
         <span>
-            <img src={imgBnb} alt="logo" className='bnb' onClick={() => {setApartments(Stays)}}/>
+            <img src={imgBnb} alt="logo" 
+              className='bnb' 
+              onClick={() => {
+                setApartments(Stays); 
+                setTambahLokasi(<div>Add location</div>);
+                setTambahTamu(<div>Add guests</div>)
+              }}/>
         </span>
         <span className='containerTombol'>
           <button 

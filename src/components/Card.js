@@ -20,7 +20,9 @@ function Card() {
     <div>
         <Tombol 
             tambahLokasi={tambahLokasi} 
+            setTambahLokasi={setTambahLokasi}
             tambahTamu={tambahTamu}
+            setTambahTamu={setTambahTamu}
             setApartments={setApartments}
         />
         <JudulUtama />
