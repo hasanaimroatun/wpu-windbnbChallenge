@@ -35,7 +35,7 @@ const Pencarian = ({
     const handleClick5 = () => {
       setApartments(filterGuest)
       setTambahLokasi(pilihLokasi)
-      setTambahTamu(tambahkanTamu)
+      tambahkanTamu.props.children[0] !== 0 && setTambahTamu(tambahkanTamu)
     }
 
   return (
