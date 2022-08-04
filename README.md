@@ -126,7 +126,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
-- [React Icons] (https://react-icons.github.io/react-icons/)
+- [React-icons](https://react-icons.github.io/react-icons/)
 
 
 ## Contact
