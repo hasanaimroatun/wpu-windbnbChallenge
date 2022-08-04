@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://windbnb-challenge-af8da.web.app">
       Demo
     </a>
     <span> | </span>
@@ -37,7 +37,7 @@
 
 ![screenshot](https://github.com/hasanaimroatun/wpu-windbnbChallenge/blob/master/src/components/screenshoot/2022-08-04%20(4).png)
 
-You can see my demo on . I have no experience in website development but i have interest in this field since a few months ago. I have learned css, html, javascript, and react from youtube and few website. I hope with more learn and practice from devChallenges can improve my skill in developing website.
+You can see my demo on https://windbnb-challenge-af8da.web.app. I have no experience in website development but i have interest in this field since a few months ago. I have learned css, html, javascript, and react from youtube and few website. I hope with more learn and practice from devChallenges can improve my skill in developing website.
 
 ### Built With
 
@@ -124,7 +124,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Acknowledgements
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
 - [React-icons](https://react-icons.github.io/react-icons/)
 
